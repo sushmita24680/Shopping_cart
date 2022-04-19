@@ -86,7 +86,7 @@ if (isset($_POST['remove'])){
                     <div class="col-md-6">
                         <?php
                             if (isset($_SESSION['cart'])){
-                                $count  = count($_SESSION['cart'])-1;
+                                $count  = count($_SESSION['cart']);
                                 echo "<h6>Price ($count items)</h6>";
                             }else{
                                 echo "<h6>Price (0 items)</h6>";
